@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testingg</title>
+    <link href="cdn_css.css" rel="stylesheet">
+    <script src="cdn_js.js"></script>
+
+    <style>
+
+        /* navbar css starts here  */
+        .hamburger {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+            }
+        }
+        /* navbar css ends here  */
+
+        @keyframes slide-in-right {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(0); }
+        }
+
+        .animate-slide-in-right {
+          animation: slide-in-right 1s ease-in-out;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-3xl font-bold text-gray-800">
+                    ASTEET
+                </div>
+                <div class="md:flex space-x-6 nav-menu">
+                    <a href="#" class="text-blue-500 hover:text-blue-700">HOME</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700">ABOUT</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700">SERVICES</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700">PROJECTS</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-700">CONTACT</a>
+                </div>
+                <button class="hamburger px-3 py-2 border rounded text-gray-500 border-gray-500" onclick="toggleMenu()">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-blue-100 pt-20 md:pt-40 pb-10 md:pb-20 px-4">
+    <div class="container mx-auto flex flex-col md:flex-row justify-center items-center">
+      <div class="w-full md:w-1/2 text-center md:text-left space-y-4">
+        <h1 class="text-5xl md:text-8xl font-bold text-gray-800">
+ The Best Pet <span id="typewriter" class="text-blue-500"></span>
+   </h1>
+        <p class="text-gray-600 text-xl">For a pawfect look and feel</p>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center items-center overflow-hidden">
+        <img src="4.webp" class="w-full md:w-120 animate-slide-in-right" alt="A dog and cat lying next to each other">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-center mt-10">
+  <div class="text-center">
+    <h1 class="text-4xl font-bold mb-4">Your pet deserves to be pampered!</h1>
+    <div class="flex items-center justify-center space-x-4">
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 1c-4.418 0-8 3.582-8 8 0 4.42 3.582 8 8 8 4.42 0 8-3.58 8-8 0-4.418-3.58-8-8-8zm1 15h-2v-2h2v2zm-1-4c-2.206 0-4-1.794-4-4h2c0 1.103.897 2 2 2v2zm1-8c1.103 0 2 .897 2 2h-2c0-1.206-.794-2-2-2v-2z" clip-rule="evenodd" />
+        </svg>
+        <span>Bath or Shower</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 1c-4.418 0-8 3.582-8 8 0 4.42 3.582 8 8 8 4.42 0 8-3.58 8-8 0-4.418-3.58-8-8-8zm1 15h-2v-2h2v2zm-1-4c-2.206 0-4-1.794-4-4h2c0 1.103.897 2 2 2v2zm1-8c1.103 0 2 .897 2 2h-2c0-1.206-.794-2-2-2v-2z" clip-rule="evenodd" />
+        </svg>
+        <span>Hands-On Pet Assessment</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 1c-4.418 0-8 3.582-8 8 0 4.42 3.582 8 8 8 4.42 0 8-3.58 8-8 0-4.418-3.58-8-8-8zm1 15h-2v-2h2v2zm-1-4c-2.206 0-4-1.794-4-4h2c0 1.103.897 2 2 2v2zm1-8c1.103 0 2 .897 2 2h-2c0-1.206-.794-2-2-2v-2z" clip-rule="evenodd" />
+        </svg>
+        <span>Safe Drying</span>
+      </div>
+    </div>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-5">
+        Book an Appointment
+      </button>
+  </div>
+</div>
+
+<div class="flex gap-4 justify-center mt-10">
+  <img src="3.jpg" alt="Image 1" class="w-96 h-52 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition duration-300">
+  <img src="5.jpeg" alt="Image 2" class="w-96 h-52 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition duration-300">
+  <img src="1.jpg" alt="Image 3" class="w-96 h-52 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition duration-300">
+  <img src="2.webp" alt="Image 4" class="w-96 h-52 object-cover rounded-lg cursor-pointer transform hover:scale-105 transition duration-300">
+</div>
+
+
+<!-- Testimonials Section -->
+<div class="bg-blue-100 mt-10">
+  <section class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-blue-900 mb-12">What Our Happy Clients Say</h2>
+      <div class="flex flex-wrap justify-center gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs cursor-pointer">
+          <div class="flex justify-center mb-4">
+            <img src="1.jpg" alt="client1" class="rounded-full w-20 h-20 object-cover">
+          </div>
+          <p class="text-gray-600 mb-4">"I'm a testimonial. Click to edit me and add text that says something nice about you and your services."</p>
+          <p class="font-bold text-blue-900">Dani, Pacific Heights</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs cursor-pointer">
+          <div class="flex justify-center mb-4">
+            <img src="1.jpg" alt="client2" class="rounded-full w-20 h-20 object-cover">
+          </div>
+          <p class="text-gray-600 mb-4">"I'm a testimonial. Click to edit me and add text that says something nice about you and your services."</p>
+          <p class="font-bold text-blue-900">Dani, Pacific Heights</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-xs cursor-pointer">
+          <div class="flex justify-center mb-4">
+            <img src="1.jpg" alt="client3" class="rounded-full w-20 h-20 object-cover">
+          </div>
+          <p class="text-gray-600 mb-4">"I'm a testimonial. Click to edit me and add text that says something nice about you and your services."</p>
+          <p class="font-bold text-blue-900">Dani, Pacific Heights</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="bg-gray-50">
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-red-500 text-sm uppercase">Get in Touch</p>
+                <h2 class="text-4xl font-bold">Contact With Our Support During Emergency!</h2>
+            </div>
+
+            <div class="flex flex-wrap -mx-6">
+                <div class="md:w-1/2">
+                <div class="w-full  px-6 mb-12">
+                    <div class="flex items-start">
+                        <div class="bg-blue-400 text-white p-4 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.29 3.71A8 8 0 1110.29 7h-1l1-4h6z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 11V9a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M5 11V9a2 2 0 00-2-2H3M17 9a2 2 0 012 2v10M7 9a2 2 0 00-2 2v10" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Our Head Office Address:</h3>
+                            <p>Lorem ipsum Agency, 343 marketing, #4148 Honey street, NY – 62617.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full  px-6 mb-12">
+                    <div class="flex items-start">
+                        <div class="bg-blue-400 text-white p-4 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 7a10 10 0 0110 10h4M6 3h12m-1 4h4M5 7h4" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Call For Help :</h3>
+                            <p>+1(21) 234 557 4568<br>+1(21) 234 557 4568</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full  px-6 mb-12">
+                    <div class="flex items-start">
+                        <div class="bg-blue-400 text-white p-4 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12v10M4 12v10" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 6a10 10 0 0110-10m12 10a10 10 0 01-10-10" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Mail Us:</h3>
+                            <p>support@mail.com<br>contact@mail.com</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full px-6 md:w-1/2">
+                    <form action="#">
+                        <div class="mb-6">
+                            <input type="text" class="w-full p-3 border-2 border-gray-200 outline-none focus:border-blue-500" placeholder="Your Name*" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" class="w-full p-3 border-2 border-gray-200 outline-none focus:border-blue-500" placeholder="Your Email*" required>
+                        </div>
+                        <div class="mb-6">
+                            <input type="text" class="w-full p-3 border-2 border-gray-200 outline-none focus:border-blue-500" placeholder="Subject*" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea class="w-full p-3 border-2 border-gray-200 outline-none focus:border-blue-500" placeholder="Type your message here*" required></textarea>
+                        </div>
+                        <div>
+                            <button class="bg-blue-400 text-white py-3 px-6 rounded hover:bg-blue-600">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+   <footer class="bg-gray-800 text-gray-300 py-12 mt-10">
+       <div class="container mx-auto px-4">
+           <div class="flex flex-wrap justify-between">
+               <!-- Company Info -->
+               <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                   <h2 class="text-xl font-semibold text-gray-100 mb-4">Company</h2>
+                   <p class="mb-4 text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                   <p class="text-gray-500">&copy; 2024 Company Name. All rights reserved.</p>
+               </div>
+               <!-- Quick Links -->
+               <div class="w-full md:w-1/6 mb-6 md:mb-0">
+                   <h2 class="text-xl font-semibold text-gray-100 mb-4">Quick Links</h2>
+                   <ul class="space-y-2">
+                       <li><a href="#" class="hover:text-gray-100 transition duration-300">About Us</a></li>
+                       <li><a href="#" class="hover:text-gray-100 transition duration-300">Services</a></li>
+                       <li><a href="#" class="hover:text-gray-100 transition duration-300">Contact</a></li>
+                       <li><a href="#" class="hover:text-gray-100 transition duration-300">Privacy Policy</a></li>
+                   </ul>
+               </div>
+               <!-- Newsletter Subscription -->
+               <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                   <h2 class="text-xl font-semibold text-gray-100 mb-4">Newsletter</h2>
+                   <p class="mb-4 text-gray-300">Stay updated with our latest news and offers. Subscribe to our newsletter.</p>
+                   <form action="#" method="post" class="flex flex-col space-y-2">
+                       <input type="email" placeholder="Your email" class="p-2 bg-gray-700 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-gray-600">
+                       <button type="submit" class="p-2 bg-gray-700 text-gray-200 rounded hover:bg-gray-600 transition duration-300">Subscribe</button>
+                   </form>
+               </div>
+               <!-- Contact Info -->
+               <div class="w-full md:w-1/4">
+                   <h2 class="text-xl font-semibold text-gray-100 mb-4">Contact Us</h2>
+                   <p class="mb-4 text-gray-300">1234 Street Name, City, State, 12345</p>
+                   <p class="mb-4 text-gray-300">Email: <a href="mailto:info@company.com" class="hover:text-gray-100 transition duration-300">info@company.com</a></p>
+                   <p class="mb-4 text-gray-300">Phone: <a href="tel:+1234567890" class="hover:text-gray-100 transition duration-300">+1 234 567 890</a></p>
+                   <div class="flex space-x-4">
+                       <a href="#" class="text-gray-400 hover:text-gray-100 transition duration-300">
+                           <svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                               <path d="M22.46 6c-.77.34-1.6.57-2.46.68a4.21 4.21 0 001.82-2.31 8.42 8.42 0 01-2.67 1.02 4.18 4.18 0 00-7.12 3.82 11.84 11.84 0 01-8.6-4.36 4.18 4.18 0 001.3 5.58 4.19 4.19 0 01-1.9-.52v.05a4.18 4.18 0 003.36 4.1 4.22 4.22 0 01-1.89.07 4.19 4.19 0 003.91 2.91 8.38 8.38 0 01-6.18 1.73 11.8 11.8 0 006.41 1.88c7.7 0 11.91-6.38 11.91-11.91 0-.18-.01-.36-.02-.53A8.53 8.53 0 0024 4.56a8.38 8.38 0 01-2.42.67 4.19 4.19 0 001.82-2.31z"/>
+                           </svg>
+                       </a>
+                       <a href="#" class="text-gray-400 hover:text-gray-100 transition duration-300">
+                           <svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                               <path d="M22.67 0H1.33A1.33 1.33 0 000 1.33v21.33A1.33 1.33 0 001.33 24h11.48V14.71h-3.13V11h3.13V8.41c0-3.1 1.89-4.79 4.66-4.79 1.33 0 2.47.1 2.8.15v3.24h-1.92c-1.5 0-1.79.72-1.79 1.76V11h3.58l-.47 3.71h-3.11V24h6.1A1.33 1.33 0 0024 22.67V1.33A1.33 1.33 0 0022.67 0z"/>
+                           </svg>
+                       </a>
+                       <a href="#" class="text-gray-400 hover:text-gray-100 transition duration-300">
+                           <svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                               <path d="M24 4.56c-.89.39-1.85.65-2.86.77a4.92 4.92 0 002.16-2.72 9.87 9.87 0 01-3.13 1.19 4.92 4.92 0 00-8.37 4.48 13.97 13.97 0 01-10.14-5.14 4.92 4.92 0 001.52 6.56 4.85 4.85 0 01-2.23-.62v.06a4.92 4.92 0 003.95 4.83 4.93 4.93 0 01-2.21.08 4.92 4.92 0 004.6 3.42 9.88 9.88 0 01-6.1 2.11c-.4 0-.8-.02-1.19-.07a13.94 13.94 0 007.56 2.22c9.07 0 14.03-7.51 14.03-14.03 0-.21 0-.42-.02-.63A10.03 10.03 0 0024 4.56z"/>
+                           </svg>
+                       </a>
+                       <a href="#" class="text-gray-400 hover:text-gray-100 transition duration-300">
+                           <svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+                               <path d="M12 2.04C6.5 2.04 2.04 6.5 2.04 12c0 4.41 3.54 8.1 8.03 8.57v-6.06H8.41V12h1.66v-1.55c0-1.63.98-2.55 2.43-2.55.69 0 1.28.05 1.45.07v1.68h-.99c-.78 0-.94.37-.94.92v1.2h1.88l-.25 1.52h-1.63v6.06c4.5-.47 8.03-4.16 8.03-8.57 0-5.5-4.46-9.96-9.96-9.96z"/>
+                           </svg>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var app = document.getElementById('typewriter');
+
+            var typewriter = new Typewriter(app, {
+              loop: true,
+              delay: 75,
+            });
+
+            typewriter
+              .typeString('Groomers in Town')
+              .pauseFor(2000)
+              .deleteAll()
+              .start();
+          });
+
+    </script>
+
+</body>
+</html>
